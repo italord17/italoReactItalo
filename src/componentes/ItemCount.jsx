@@ -1,4 +1,3 @@
-
 import {useState} from "react"
 
 const ItemCount = () => {
@@ -18,8 +17,6 @@ const ItemCount = () => {
         } 
         setContador(contador - 1);
     }
-
-
     
     return(
         <>
@@ -35,4 +32,6 @@ const ItemCount = () => {
         
     )
 }
+
 export default ItemCount
+

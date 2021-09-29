@@ -38,7 +38,7 @@ const PokemonListContainer = () => {
             <ul className="pokemon-list">
             {
             pokemons.map(pokemon => <PokemonItem id={pokemon.id} key={pokemon.id} name={pokemon.name} 
-            image={pokemon.sprites.front_default} types={pokemon.types}/>)
+            image={pokemon.sprites.front_shiny} types={pokemon.types}/>)
             }  
             </ul>
 

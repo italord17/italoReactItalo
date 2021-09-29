@@ -21,11 +21,13 @@ const ItemCount = () => {
     return(
         <>
 
-        <p>Contador: {contador}</p>
         
-        <button onClick={handleSum}> Aumentar Contador </button>
-        <button onClick={handleSubstract}> Disminuir Contador </button>
-        <button onClick={() => { console.log("Confirmar") } }> Confirmar </button>
+        <button type="button" className="btn btn-dark btn-sm " onClick={handleSubstract}> - </button>
+        <p>Contador: {contador}</p>
+        <button type="button" className="btn btn-dark btn-sm " onClick={handleSum}> + </button>
+        
+        
+        <button type="button" className="btn btn-dark btn-lg" onClick={() => { console.log("Confirmar") } }> Confirmar </button>
                 
         </>
   

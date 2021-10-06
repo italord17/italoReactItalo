@@ -1,10 +1,5 @@
-
 const CarWidget = () => {
-    return (
-        <span className="material-icons">shopping_cart</span>
-    )
-}
+  return <span className="material-icons">shopping_cart</span>;
+};
 
-export default CarWidget
-
-
+export default CarWidget;

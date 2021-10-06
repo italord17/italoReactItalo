@@ -1,15 +1,15 @@
-.pokemon-list{
-    list-style: none ;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 7.5px;
+.pokemon-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7.5px;
 }
 
-.card-title{
-    text-transform: capitalize;
+.card-title {
+  text-transform: capitalize;
 }
 
-.pokemoCard{
-    list-style: none;
+.pokemoCard {
+  list-style: none;
 }

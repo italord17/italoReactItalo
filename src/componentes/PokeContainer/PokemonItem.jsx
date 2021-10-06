@@ -1,22 +1,23 @@
-import { Link } from "react-router-dom"
-import ItemCount from "../ItemCount"
+import { Link } from "react-router-dom";
 
-const PokemonItem = ({name, image, types, id}) => {
-    return (
-        <div className="card" style={{width: '18rem'}}>
-        <img src={image} className="card-img-top" alt="..."  />
-            <div className="card-body">
-                <h5 className="card-title pokemon-list">{id} - {name}</h5>
-                <ul className="card-text">
-                    {
-                    types.map(type => <li className="pokemon-list" key={type.slot}>{type.type.name}</li>)
-                    }
-                </ul>
-                <Link to={`/detalle/${name}`} className="btn btn-danger pokemon-list"> detalles </Link>
-                <a href="#.." className="btn btn-danger pokemon-list"> <ItemCount/> </a>
-            </div>
-        </div>
-    )
-}
 
-export default PokemonItem
+
+const PokemonItem = ({name, image, id, pokemon,}) => {
+  return (
+    <div className="card" style={{ width: "18rem" }}>
+      <img src={image} className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="card-title pokemon-list">
+          {id} - {name}
+        </h5>
+
+        <Link to={`/detalle/${name}`} className="btn btn-danger pokemon-list">
+          {" "}
+          detalles{" "}
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default PokemonItem;
